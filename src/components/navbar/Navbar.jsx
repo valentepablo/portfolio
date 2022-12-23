@@ -32,9 +32,14 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="fixed bottom-3 right-3 flex aspect-square h-10 items-center justify-center rounded-full bg-black sm:hidden">
+        <div
+          className={`${
+            open ? "translate-x-80" : "translate-x-0"
+          } fixed bottom-3 right-0 flex aspect-square h-12 items-center justify-center rounded-bl-lg rounded-tl-lg border-y border-l border-zinc-800 bg-black transition sm:hidden`}
+        >
           <button onClick={() => setOpen(!open)}>
-            {open ? <CloseIcon /> : <MenuIcon />}
+            {/* {open ? <CloseIcon /> : <MenuIcon />} */}
+            <MenuIcon />
           </button>
         </div>
         <div
