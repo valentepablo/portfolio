@@ -5,9 +5,13 @@ import { useState } from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  open
+    ? (document.body.style.overflow = "hidden")
+    : (document.body.style.overflow = "scroll");
+
   return (
-    <header className="bg-black">
-      <nav className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
+    <header className="fixed inset-x-0 z-30 bg-black">
+      <nav className=" mx-auto flex h-16 max-w-7xl items-center justify-between bg-black px-4">
         <p className="uppercase">
           pablo<span className="font-bold">valente</span>
         </p>
@@ -28,27 +32,35 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="sm:hidden">
+        <div className="fixed bottom-3 right-3 flex aspect-square h-10 items-center justify-center rounded-full bg-black sm:hidden">
           <button onClick={() => setOpen(!open)}>
             {open ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
+        <div
+          onClick={() => setOpen(!open)}
+          className={`${
+            open
+              ? "pointer-events-auto opacity-100 "
+              : "pointer-events-none opacity-0"
+          } fixed inset-0 z-10 bg-black bg-opacity-30 transition duration-200 ease-out`}
+        ></div>
         <ul
           className={`${
-            open ? "block" : "hidden"
-          } fixed inset-x-0 bottom-0 space-y-4 border-t border-zinc-800 bg-black p-4`}
+            open ? "translate-y-0" : "translate-y-[300px]"
+          } fixed inset-x-0 bottom-0 z-20 divide-y divide-zinc-800 border-t border-zinc-800 bg-black transition delay-150 duration-200`}
         >
-          <li className="rounded-md border border-zinc-800 bg-gradient-to-r from-black to-[#090909] px-4 py-3">
+          <li className="p-6">
             <a href="#" className="cursor-pointer transition hover:text-white">
               Portfolio
             </a>
           </li>
-          <li className="rounded-md border border-zinc-800 bg-gradient-to-r from-black to-[#090909] px-4 py-3">
+          <li className="p-6">
             <a href="#" className="cursor-pointer transition hover:text-white">
               Sobre mi
             </a>
           </li>
-          <li className="rounded-md border border-zinc-800 bg-gradient-to-r from-black to-[#090909] px-4 py-3">
+          <li className="p-6">
             <a href="#" className="cursor-pointer transition hover:text-white">
               Contacto
             </a>
