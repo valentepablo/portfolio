@@ -1,18 +1,49 @@
 import MenuIcon from "./MenuIcon";
-import CloseIcon from "./CloseIcon";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const [goingDown, setGoingDown] = useState(false);
+
   open
-    ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = "scroll");
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "auto");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY >= 5) {
+        setGoingDown(true);
+      }
+      if (currentScrollY === 0) {
+        setGoingDown(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [goingDown]);
 
   return (
-    <header className="fixed inset-x-0 z-30 bg-black">
-      <nav className=" mx-auto flex h-16 max-w-7xl items-center justify-between bg-black px-4">
-        <p className="uppercase">
+    <header
+      className={`${
+        goingDown ? "border-b border-zinc-800" : "border-none"
+      } fixed inset-x-0 top-0`}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-[10px]"></div>
+
+      <nav
+        className={`${
+          goingDown ? "py-4" : "py-10"
+        } relative mx-auto flex max-w-7xl items-center justify-between px-4 transition-[padding] duration-500`}
+      >
+        <p
+          className={`${
+            goingDown ? "text-base" : "text-xl"
+          } uppercase transition-[font-size] duration-500`}
+        >
           pablo<span className="font-bold">valente</span>
         </p>
         <ul className="hidden gap-8 text-sm text-neutral-400 sm:flex">
