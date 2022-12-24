@@ -34,16 +34,8 @@ const Navbar = () => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-[10px]"></div>
 
-      <nav
-        className={`${
-          goingDown ? "py-4" : "py-10"
-        } relative mx-auto flex max-w-7xl items-center justify-between px-4 transition-[padding] duration-500`}
-      >
-        <p
-          className={`${
-            goingDown ? "text-base" : "text-xl"
-          } uppercase transition-[font-size] duration-500`}
-        >
+      <nav className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
+        <p className="uppercase transition-[font-size] duration-150">
           pablo<span className="font-bold">valente</span>
         </p>
         <ul className="hidden gap-8 text-sm text-neutral-400 sm:flex">
@@ -66,7 +58,7 @@ const Navbar = () => {
         <div
           className={`${
             open ? "translate-x-80" : "translate-x-0"
-          } fixed bottom-3 right-0 flex aspect-square h-12 items-center justify-center rounded-bl-lg rounded-tl-lg border-y border-l border-zinc-800 bg-black transition sm:hidden`}
+          } fixed bottom-6 right-0 flex aspect-square h-12 items-center justify-center rounded-bl-lg rounded-tl-lg border-y border-l border-zinc-800 bg-black transition sm:hidden`}
         >
           <button onClick={() => setOpen(!open)}>
             {/* {open ? <CloseIcon /> : <MenuIcon />} */}
@@ -79,12 +71,12 @@ const Navbar = () => {
             open
               ? "pointer-events-auto opacity-100 "
               : "pointer-events-none opacity-0"
-          } fixed inset-0 z-10 bg-black bg-opacity-30 transition duration-200 ease-out`}
+          } fixed inset-0 z-10 bg-black bg-opacity-20 backdrop-blur-sm transition duration-200 ease-out`}
         ></div>
         <ul
           className={`${
-            open ? "translate-y-0" : "translate-y-[300px]"
-          } fixed inset-x-0 bottom-0 z-20 divide-y divide-zinc-800 border-t border-zinc-800 bg-black transition delay-150 duration-200`}
+            open ? "translate-x-0" : "translate-x-[500px]"
+          } fixed inset-x-5 bottom-1/2 z-20 translate-y-1/2 divide-y divide-zinc-800 rounded-lg border border-zinc-800 bg-black text-center transition delay-150 duration-200`}
         >
           <li className="p-6">
             <a href="#" className="cursor-pointer transition hover:text-white">

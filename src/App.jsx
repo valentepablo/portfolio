@@ -9,7 +9,11 @@ function App() {
       <Section>
         <Container>
           <SectionTitle title="Portfolio" />
-          <img src="../../test.jpg" alt="photo of the galaxy" />
+          <img
+            src="../../test.jpg"
+            alt="photo of the galaxy"
+            className="mt-4 rounded-lg"
+          />
         </Container>
       </Section>
     </div>
