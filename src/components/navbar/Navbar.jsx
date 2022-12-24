@@ -13,10 +13,10 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY >= 5) {
+      if (currentScrollY > 5) {
         setGoingDown(true);
       }
-      if (currentScrollY === 0) {
+      if (currentScrollY <= 5) {
         setGoingDown(false);
       }
     };
@@ -29,26 +29,28 @@ const Navbar = () => {
   return (
     <header
       className={`${
-        goingDown ? "border-b border-zinc-800" : "border-none"
-      } fixed inset-x-0 top-0`}
+        goingDown ? "border-b " : "border-none"
+      } fixed inset-x-0 top-0 z-50 border-zinc-800`}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-[10px]"></div>
 
       <nav className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        <p className="uppercase transition-[font-size] duration-150">
+        <p className="uppercase sm:text-xl">
           pablo<span className="font-bold">valente</span>
         </p>
         <ul className="hidden gap-8 text-sm text-neutral-400 sm:flex">
           <li>
             <a href="#" className="cursor-pointer transition hover:text-white">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#" className="cursor-pointer transition hover:text-white">
               Sobre mi
             </a>
           </li>
+
+          <li>
+            <a href="#" className="cursor-pointer transition hover:text-white">
+              Portfolio
+            </a>
+          </li>
+
           <li>
             <a href="#" className="cursor-pointer transition hover:text-white">
               Contacto
@@ -75,19 +77,21 @@ const Navbar = () => {
         ></div>
         <ul
           className={`${
-            open ? "translate-x-0" : "translate-x-[500px]"
-          } fixed inset-x-5 bottom-1/2 z-20 translate-y-1/2 divide-y divide-zinc-800 rounded-lg border border-zinc-800 bg-black text-center transition delay-150 duration-200`}
+            open ? "translate-x-0" : "translate-x-[600px]"
+          } fixed inset-x-5 bottom-1/2 z-20 translate-y-1/2 divide-y divide-zinc-800 rounded-lg border border-zinc-800 bg-black text-center transition delay-150 duration-200 sm:hidden`}
         >
-          <li className="p-6">
-            <a href="#" className="cursor-pointer transition hover:text-white">
-              Portfolio
-            </a>
-          </li>
           <li className="p-6">
             <a href="#" className="cursor-pointer transition hover:text-white">
               Sobre mi
             </a>
           </li>
+
+          <li className="p-6">
+            <a href="#" className="cursor-pointer transition hover:text-white">
+              Portfolio
+            </a>
+          </li>
+
           <li className="p-6">
             <a href="#" className="cursor-pointer transition hover:text-white">
               Contacto

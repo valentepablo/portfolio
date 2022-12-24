@@ -7,3 +7,73 @@ body {
   color: #fff;
   font-family: "Inter", sans-serif;
 }
+
+.image-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+@media screen and (min-width: 640px) {
+  .image-wrapper {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.image-wrapper img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  cursor: pointer;
+}
+
+.image-1 {
+  -webkit-clip-path: polygon(80% 0, 0 0, 0 27%);
+  clip-path: polygon(80% 0, 0 0, 0 27%);
+  transform: translate(-20px, 10px);
+  transition: transform 300ms ease-in-out;
+  transform-origin: top;
+}
+
+.image-wrapper:hover .image-1 {
+  transform: translate(0, 0);
+}
+
+.image-2 {
+  -webkit-clip-path: polygon(80% 0, 100% 0, 100% 11%, 0 77%, 0 27%);
+  clip-path: polygon(80% 0, 100% 0, 100% 11%, 0 77%, 0 27%);
+  transform: translate(20px, -10px);
+  transition: transform 300ms ease-in-out;
+}
+
+.image-wrapper:hover .image-2 {
+  transform: translate(0, 0);
+}
+
+.image-3 {
+  -webkit-clip-path: polygon(0 77%, 100% 11%, 100% 65%, 21% 100%, 0 100%);
+  clip-path: polygon(0 77%, 100% 11%, 100% 65%, 21% 100%, 0 100%);
+  transform: translate(-30px, 40px);
+  transition: transform 300ms ease-in-out;
+}
+
+.image-wrapper:hover .image-3 {
+  transform: translate(0, 0);
+}
+
+.image-4 {
+  -webkit-clip-path: polygon(100% 65%, 21% 100%, 100% 100%);
+  clip-path: polygon(100% 65%, 21% 100%, 100% 100%);
+  transform: translate(30px, 0px);
+  transition: transform 300ms ease-in-out;
+}
+
+.image-wrapper:hover .image-4 {
+  transform: translate(0, 0);
+}
