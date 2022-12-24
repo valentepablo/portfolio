@@ -33,7 +33,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="mt-14 ">
+      <div className="mt-10 sm:mt-0">
         <a
           href="#"
           className="flex items-center gap-1 border-b border-gray-300 text-sm text-gray-300"
