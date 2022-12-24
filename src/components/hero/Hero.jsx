@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-2 bg-hero-pattern bg-center px-4 sm:gap-40 sm:bg-cover">
+    <div className="flex h-screen flex-col items-center justify-center gap-20 bg-hero-pattern bg-center px-4 sm:gap-40 sm:bg-cover">
       <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-12">
         <div className="text-center sm:text-left">
           <h1 className="text-[40px] font-bold  leading-tight sm:bg-[#111] sm:p-2 sm:text-[80px] sm:leading-[5rem]">
@@ -33,7 +33,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="mt-10 sm:mt-0">
+      <div>
         <a
           href="#"
           className="flex items-center gap-1 border-b border-gray-300 text-sm text-gray-300"
