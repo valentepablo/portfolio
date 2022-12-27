@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -15,6 +19,12 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+  .image-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1160px) {
   .image-wrapper {
     width: 500px;
     height: 500px;

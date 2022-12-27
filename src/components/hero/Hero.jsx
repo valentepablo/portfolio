@@ -1,12 +1,12 @@
 const Hero = () => {
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-20 bg-hero-pattern bg-center px-4 sm:gap-40 sm:bg-cover">
-      <div className="flex flex-col items-center gap-6 sm:flex-row sm:gap-12">
+    <div className="flex min-h-screen flex-col items-center justify-center gap-20 bg-hero-pattern bg-center px-4 pt-16 sm:bg-cover md:gap-40">
+      <div className="flex flex-col items-center gap-6 sm:gap-12 lg:flex-row">
         <div className="text-center sm:text-left">
-          <h1 className="text-[40px] font-bold  leading-tight sm:bg-[#111] sm:p-2 sm:text-[80px] sm:leading-[5rem]">
+          <h1 className="rounded-lg text-[40px] font-bold leading-tight sm:bg-[#111] sm:p-2 sm:text-[80px] sm:leading-[5rem]">
             Pablo Valente
           </h1>
-          <h2 className="text-lg font-medium  text-zinc-500 sm:mt-1 sm:text-2xl">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-zinc-500 sm:text-2xl ">
             Desarrollador Web
           </h2>
         </div>
@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
       <div>
         <a
-          href="#"
+          href="#sobre-mi"
           className="flex items-center gap-1 border-b border-gray-300 text-sm text-gray-300"
         >
           Conoce más sobre mi{" "}

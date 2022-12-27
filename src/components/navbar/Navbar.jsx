@@ -32,15 +32,18 @@ const Navbar = () => {
         goingDown ? "border-b " : "border-none"
       } fixed inset-x-0 top-0 z-50 border-zinc-800`}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-[10px]"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-[10px]"></div>
 
       <nav className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         <p className="uppercase sm:text-xl">
           pablo<span className="font-bold">valente</span>
         </p>
-        <ul className="hidden gap-8 text-sm text-neutral-400 sm:flex">
+        <ul className="hidden gap-8 text-sm text-neutral-200 sm:flex">
           <li>
-            <a href="#" className="cursor-pointer transition hover:text-white">
+            <a
+              href="#sobre-mi"
+              className="cursor-pointer transition hover:text-white"
+            >
               Sobre mi
             </a>
           </li>
@@ -80,23 +83,32 @@ const Navbar = () => {
             open ? "translate-x-0" : "translate-x-[600px]"
           } fixed inset-x-5 bottom-1/2 z-20 translate-y-1/2 divide-y divide-zinc-800 rounded-lg border border-zinc-800 bg-black text-center transition delay-150 duration-200 sm:hidden`}
         >
-          <li className="p-6">
-            <a href="#" className="cursor-pointer transition hover:text-white">
+          <a
+            href="#sobre-mi"
+            className="block cursor-pointer transition hover:text-white"
+          >
+            <li className="p-6" onClick={() => setOpen(!open)}>
               Sobre mi
-            </a>
-          </li>
+            </li>
+          </a>
 
-          <li className="p-6">
-            <a href="#" className="cursor-pointer transition hover:text-white">
+          <a
+            href="#"
+            className="block cursor-pointer transition hover:text-white"
+          >
+            <li className="p-6" onClick={() => setOpen(!open)}>
               Portfolio
-            </a>
-          </li>
+            </li>
+          </a>
 
-          <li className="p-6">
-            <a href="#" className="cursor-pointer transition hover:text-white">
+          <a
+            href="#"
+            className="block cursor-pointer transition hover:text-white"
+          >
+            <li className="p-6" onClick={() => setOpen(!open)}>
               Contacto
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </nav>
     </header>
