@@ -122,18 +122,20 @@ const proyectos = [
 
 const Portfolio = () => {
   return (
-    <Section>
-      <Container>
-        <div className="py-6 md:py-20" id="portfolio">
-          <SectionTitle title="Mis Proyectos" />
-          <div className="mt-6 grid grid-cols-1 gap-10 md:mt-16">
-            {proyectos.map((proyecto) => (
-              <ProjectCard proyecto={proyecto} key={proyecto.nombre} />
-            ))}
+    <div id="portfolio">
+      <Section>
+        <Container>
+          <div className="py-6 md:py-20">
+            <SectionTitle title="Mis Proyectos" />
+            <div className="mt-6 grid grid-cols-1 gap-10 md:mt-16">
+              {proyectos.map((proyecto) => (
+                <ProjectCard proyecto={proyecto} key={proyecto.nombre} />
+              ))}
+            </div>
           </div>
-        </div>
-      </Container>
-    </Section>
+        </Container>
+      </Section>
+    </div>
   );
 };
 
