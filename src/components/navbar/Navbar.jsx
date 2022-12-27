@@ -35,9 +35,9 @@ const Navbar = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-[10px]"></div>
 
       <nav className="relative mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        <p className="uppercase sm:text-xl">
+        <a href="#" className="uppercase sm:text-xl">
           pablo<span className="font-bold">valente</span>
-        </p>
+        </a>
         <ul className="hidden gap-8 text-sm text-neutral-200 sm:flex">
           <li>
             <a
