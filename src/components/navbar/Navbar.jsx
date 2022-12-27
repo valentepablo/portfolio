@@ -49,7 +49,10 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a href="#" className="cursor-pointer transition hover:text-white">
+            <a
+              href="#portfolio"
+              className="cursor-pointer transition hover:text-white"
+            >
               Portfolio
             </a>
           </li>
@@ -93,7 +96,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="#"
+            href="#portfolio"
             className="block cursor-pointer transition hover:text-white"
           >
             <li className="p-6" onClick={() => setOpen(!open)}>
