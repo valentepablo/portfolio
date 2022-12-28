@@ -1,12 +1,15 @@
 const ProjectCard = ({ proyecto }) => {
   return (
-    <div className="rounded-2xl bg-[#101010] p-6 md:px-16 md:py-14">
+    <div
+      id={proyecto.nombre}
+      className="rounded-2xl bg-[#101010] p-6 md:px-16 md:py-14"
+    >
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-medium md:text-4xl">{proyecto.nombre}</h3>
         <a
           href={proyecto.url}
           target="_blank"
-          className="flex items-center gap-2 text-zinc-400 hover:text-white"
+          className="flex items-center gap-2 text-zinc-400 transition hover:text-white"
         >
           <span className="text-sm">Ir al sitio</span>
           <svg
@@ -25,7 +28,7 @@ const ProjectCard = ({ proyecto }) => {
           </svg>
         </a>
       </div>
-      <p className="mt-1 text-sm text-zinc-400 md:mt-2">
+      <p className="mt-2 text-sm text-zinc-400 md:mt-2">
         {proyecto.descripcion}
       </p>
       <div className="mt-2 mb-4 flex gap-3 md:mb-6 md:mt-4">

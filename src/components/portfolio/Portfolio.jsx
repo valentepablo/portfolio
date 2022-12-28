@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import Container from "../Container";
 import { Section, SectionTitle } from "../section/Section";
 import ProjectCard from "./ProjectCard";
@@ -105,11 +106,6 @@ const proyectos = [
           "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
       },
       {
-        nombre: "TypeScript",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-      },
-      {
         nombre: "TailwindCSS",
         icono:
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
@@ -121,8 +117,69 @@ const proyectos = [
 ];
 
 const Portfolio = () => {
+  const [intersecting, setIntersecting] = useState(false);
+  const [closeIndex, setCloseIndex] = useState(false);
+  const portfolio = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        setIntersecting(entry.isIntersecting);
+      },
+      { rootMargin: "0px 0px -600px 0px" }
+    );
+
+    observer.observe(portfolio.current);
+  }, []);
+
+  console.log(intersecting);
   return (
-    <div id="portfolio">
+    <div id="portfolio" ref={portfolio} className="relative">
+      <div
+        className={`${intersecting ? "translate-x-0" : "translate-x-[600px]"} ${
+          closeIndex ? "translate-x-[80%]" : "translate-x-[0%]"
+        } group fixed top-1/2 right-0 hidden -translate-y-1/2 overflow-hidden rounded-l-xl bg-[#101010] shadow-xl transition duration-500 ease-out lg:block xl:w-48`}
+      >
+        <div className="relative bg-neutral-900 py-4 px-10 text-base font-semibold uppercase text-zinc-500">
+          <button
+            onClick={() => setCloseIndex(!closeIndex)}
+            className="absolute top-1/2 left-3 -translate-y-1/2 opacity-0 transition hover:text-white group-hover:opacity-100"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={2.5}
+              stroke="currentColor"
+              className={`${
+                closeIndex ? "rotate-0" : "rotate-180"
+              } aspect-square h-4 transition duration-200`}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <h3>Proyectos</h3>
+        </div>
+        <ul className="space-y-4 py-6 px-10">
+          {proyectos.map((proyecto) => (
+            <a
+              href={`#${proyecto.nombre}`}
+              className="block"
+              key={proyecto.nombre}
+            >
+              <li className="cursor-pointer text-sm text-zinc-300 transition hover:text-white">
+                {proyecto.nombre}
+              </li>
+            </a>
+          ))}
+        </ul>
+      </div>
+
       <Section>
         <Container>
           <div className="py-6 md:py-20">
