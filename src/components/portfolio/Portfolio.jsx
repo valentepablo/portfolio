@@ -118,7 +118,7 @@ const proyectos = [
 
 const Portfolio = () => {
   const [intersecting, setIntersecting] = useState(false);
-  const [closeIndex, setCloseIndex] = useState(false);
+  const [openIndex, setOpenIndex] = useState(false);
   const portfolio = useRef();
 
   useEffect(() => {
@@ -137,13 +137,15 @@ const Portfolio = () => {
   return (
     <div id="portfolio" ref={portfolio} className="relative">
       <div
-        className={`${intersecting ? "translate-x-0" : "translate-x-[600px]"} ${
-          closeIndex ? "translate-x-[80%]" : "translate-x-[0%]"
-        } group fixed top-1/2 right-0 hidden -translate-y-1/2 overflow-hidden rounded-l-xl bg-[#101010] shadow-xl transition duration-500 ease-out lg:block xl:w-48`}
+        className={`${
+          intersecting ? "visible opacity-100" : "invisible opacity-0"
+        } ${
+          openIndex ? "translate-x-[0%]" : "translate-x-[80%]"
+        } group fixed top-1/2 right-0 hidden -translate-y-1/2 overflow-hidden rounded-l-xl bg-[#101010] shadow-xl transition duration-300 ease-out lg:block xl:w-48`}
       >
         <div className="relative bg-neutral-900 py-4 px-10 text-base font-semibold uppercase text-zinc-500">
           <button
-            onClick={() => setCloseIndex(!closeIndex)}
+            onClick={() => setOpenIndex(!openIndex)}
             className="absolute top-1/2 left-3 -translate-y-1/2 opacity-0 transition hover:text-white group-hover:opacity-100"
           >
             <svg
@@ -153,7 +155,7 @@ const Portfolio = () => {
               strokeWidth={2.5}
               stroke="currentColor"
               className={`${
-                closeIndex ? "rotate-0" : "rotate-180"
+                openIndex ? "rotate-180" : "rotate-0"
               } aspect-square h-4 transition duration-200`}
             >
               <path
