@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/bg-pattern.png')",
+        "hero-pattern2": "url('/bg-pattern.png')",
+        "hero-pattern":
+          'url("https://www.transparenttextures.com/patterns/diagmonds.png")',
       },
     },
   },
