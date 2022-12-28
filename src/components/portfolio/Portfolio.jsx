@@ -118,7 +118,7 @@ const proyectos = [
 
 const Portfolio = () => {
   const [intersecting, setIntersecting] = useState(false);
-  const [openIndex, setOpenIndex] = useState(false);
+  const [openIndex, setOpenIndex] = useState(true);
   const portfolio = useRef();
 
   useEffect(() => {
