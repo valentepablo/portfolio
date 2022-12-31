@@ -36,17 +36,17 @@ const Hero = () => {
       <div>
         <a
           href="#sobre-mi"
-          className="flex items-center gap-1 border-b border-gray-300 text-sm text-gray-300"
+          className="group flex items-center gap-1 text-sm font-medium text-gray-300"
         >
           Conoce más sobre mi{" "}
-          <span>
+          <span className="transition duration-200 group-hover:translate-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              strokeWidth={2}
+              strokeWidth={2.5}
               stroke="currentColor"
-              className="h-3.5 w-3.5"
+              className="h-4 w-4"
             >
               <path
                 strokeLinecap="round"

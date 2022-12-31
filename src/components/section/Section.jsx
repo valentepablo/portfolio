@@ -8,7 +8,7 @@ export const Section = ({ children }) => {
 
 export const SectionLight = ({ children }) => {
   return (
-    <section className="flex min-h-screen items-center justify-center bg-zinc-100 py-8 text-zinc-900">
+    <section className="flex min-h-screen items-center justify-center bg-zinc-100 bg-gradient-to-br from-zinc-50 to-zinc-300 py-8 text-zinc-900">
       {children}
     </section>
   );

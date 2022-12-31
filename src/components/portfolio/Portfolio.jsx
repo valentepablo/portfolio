@@ -7,7 +7,7 @@ const proyectos = [
   {
     nombre: "Gamestore",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus nesciunt quidem beatae quam culpa necessitatibus ullam esse veniam tenetur?",
+      "Tienda virtual de videojuegos. Permite filtrar por categorías, ver el detalle de cada producto y agregar al carrito de compras.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -31,7 +31,7 @@ const proyectos = [
   {
     nombre: "Poke-App",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus nesciunt quidem beatae quam culpa necessitatibus ullam esse veniam tenetur?",
+      "Pequeña aplicación con la que podemos buscar Pokemons por nombre o por tipo de Pokemon para luego agregarlos a nuestro equipo.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -50,7 +50,7 @@ const proyectos = [
   {
     nombre: "TodoList",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus nesciunt quidem beatae quam culpa necessitatibus ullam esse veniam tenetur?",
+      "Esta aplicación nos permite crear nuevas tareas y asignarle una prioridad a las mismas. Podemos visualizar las tareas que están en progreso y las que ya han sido completadas.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -74,7 +74,7 @@ const proyectos = [
   {
     nombre: "WeatherApp",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus nesciunt quidem beatae quam culpa necessitatibus ullam esse veniam tenetur?",
+      "Pequeña aplicación del clima con la cual podemos buscar cualquier ciudad del mundo y nos muestra el clima actual y el pronóstico diario de la misma.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -98,7 +98,7 @@ const proyectos = [
   {
     nombre: "Bougie Shop",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus nesciunt quidem beatae quam culpa necessitatibus ullam esse veniam tenetur?",
+      "Tienda virtual para un emprendimiento de velas artesanales. Muestra las diferentes categorías de productos disponibles y contiene un carrito de compras.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -127,7 +127,7 @@ const Portfolio = () => {
         const entry = entries[0];
         setIntersecting(entry.isIntersecting);
       },
-      { rootMargin: "0px 0px -600px 0px" }
+      { rootMargin: "-50% 0px" }
     );
 
     observer.observe(portfolio.current);
@@ -141,7 +141,7 @@ const Portfolio = () => {
           intersecting ? "visible opacity-100" : "invisible opacity-0"
         } ${
           openIndex ? "translate-x-[0%]" : "translate-x-[80%]"
-        } group fixed top-1/2 right-0 hidden -translate-y-1/2 overflow-hidden rounded-l-xl bg-[#101010] shadow-xl transition duration-300 ease-out lg:block xl:w-48`}
+        } group fixed top-1/2 right-0 hidden -translate-y-1/2 overflow-hidden rounded-l-xl bg-[#101010] shadow-xl transition duration-500 ease-out lg:block xl:w-48`}
       >
         <div className="relative bg-neutral-900 py-4 px-10 text-base font-semibold uppercase text-zinc-500">
           <button
