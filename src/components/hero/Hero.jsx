@@ -36,7 +36,7 @@ const Hero = () => {
       <div>
         <a
           href="#sobre-mi"
-          className="group flex items-center gap-1 text-sm font-medium text-gray-300"
+          className="group flex items-center gap-1 text-sm font-medium text-gray-300 transition hover:text-white"
         >
           Conoce más sobre mi{" "}
           <span className="transition duration-200 group-hover:translate-x-2">
