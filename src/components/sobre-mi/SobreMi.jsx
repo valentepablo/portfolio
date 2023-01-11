@@ -19,22 +19,22 @@ const SobreMi = () => {
                 </h3>
                 <p className="mb-4 text-sm leading-relaxed text-zinc-700 md:text-lg">
                   <strong>Desarrollador Frontend</strong>, actualmente
-                  adquiriendo conocimientos de Backend. Genero proyectos muy
-                  seguido para implementar técnicas de desarrollo y tecnologías
-                  que voy aprendiendo.
+                  adquiriendo conocimientos de Backend. Genero proyectos
+                  continuamente para implementar técnicas de desarrollo y
+                  tecnologías que voy aprendiendo.
                 </p>
 
                 <p className="mb-4 text-sm leading-relaxed text-zinc-700 md:text-lg">
-                  Soy una persona muy entusiasta, me apasiona mucho adquirir
-                  nuevos conocimientos y es por eso que comencé mi carrera de
-                  manera autodidacta investigando sobre el mundo de la
-                  programación y más especificamente el desarrollo web.
+                  Persona entusiasta, apasionado por adquirir nuevos
+                  conocimientos y es por eso que comencé mi carrera de manera
+                  autodidacta investigando sobre el mundo de la programación y
+                  especificamente el desarrollo web.
                 </p>
 
                 <p className="text-sm leading-relaxed text-zinc-700 md:text-lg">
-                  Actualmente suelo desarrollar aplicaciones con Next.js.
-                  También disfruto de aprender nuevas tecnologías y por eso me
-                  encuentro aprendiendo sobre Backend.
+                  Actualmente desarrollando aplicaciones con Next.js. También
+                  disfruto de aprender nuevas tecnologías y por eso me encuentro
+                  incursionando en el mundo del Backend.
                 </p>
               </div>
               <div>
