@@ -34,7 +34,7 @@ const SobreMi = () => {
                 <p className="text-sm leading-relaxed text-zinc-700 md:text-lg">
                   Actualmente desarrollando aplicaciones con Next.js. También
                   disfruto de aprender nuevas tecnologías y por eso me encuentro
-                  incursionando en el mundo del Backend.
+                  incursionando en el Backend.
                 </p>
               </div>
               <div>
