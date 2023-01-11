@@ -17,14 +17,24 @@ const SobreMi = () => {
                 <h3 className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-zinc-800 sm:text-2xl">
                   Sobre mi
                 </h3>
-                <p className="text-center text-sm leading-relaxed text-zinc-700 md:text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  voluptas sequi placeat dolorem, amet, dolorum tenetur deleniti
-                  deserunt, accusantium esse iusto eaque! Sunt unde aut qui
-                  quibusdam expedita cumque assumenda eius quisquam consequuntur
-                  alias, tempora laudantium recusandae praesentium maiores fugit
-                  libero adipisci nesciunt eos, voluptatibus eligendi. Id
-                  quisquam ipsam voluptates.
+                <p className="mb-4 text-sm leading-relaxed text-zinc-700 md:text-lg">
+                  <strong>Desarrollador Frontend</strong>, actualmente
+                  adquiriendo conocimientos de Backend. Genero proyectos muy
+                  seguido para implementar técnicas de desarrollo y tecnologías
+                  que voy aprendiendo.
+                </p>
+
+                <p className="mb-4 text-sm leading-relaxed text-zinc-700 md:text-lg">
+                  Soy una persona muy entusiasta, me apasiona mucho adquirir
+                  nuevos conocimientos y es por eso que comencé mi carrera de
+                  manera autodidacta investigando sobre el mundo de la
+                  programación y más especificamente el desarrollo web.
+                </p>
+
+                <p className="text-sm leading-relaxed text-zinc-700 md:text-lg">
+                  Actualmente suelo desarrollar aplicaciones con Next.js.
+                  También disfruto de aprender nuevas tecnologías y por eso me
+                  encuentro aprendiendo sobre Backend.
                 </p>
               </div>
               <div>
