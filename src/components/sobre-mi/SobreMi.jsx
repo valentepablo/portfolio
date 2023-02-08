@@ -1,8 +1,4 @@
-import {
-  Section,
-  SectionLight,
-  SectionTitle,
-} from "../../components/section/Section";
+import { SectionLight, SectionTitle } from "../../components/section/Section";
 import Container from "../../components/Container";
 
 const SobreMi = () => {
@@ -85,7 +81,7 @@ const SobreMi = () => {
                   <div className="flex aspect-square w-[80px] flex-col items-center justify-center rounded-lg md:w-[100px]">
                     <img
                       className="aspect-square w-16 rounded-lg md:w-20"
-                      src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+                      src="https://res.cloudinary.com/dg3gyk0gu/image/upload/v1669674284/tags/next.png"
                       alt="any picture"
                     />
                     <p className="mt-1 text-sm font-medium text-zinc-700">
@@ -120,6 +116,16 @@ const SobreMi = () => {
                     />
                     <p className="mt-1 text-sm font-medium text-zinc-700">
                       Firebase
+                    </p>
+                  </div>
+                  <div className="flex aspect-square w-[80px] flex-col items-center justify-center rounded-lg md:w-[100px]">
+                    <img
+                      className="aspect-square w-16 rounded-lg md:w-20"
+                      src="https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png"
+                      alt="any picture"
+                    />
+                    <p className="mt-1 text-sm font-medium text-zinc-700">
+                      Framer Motion
                     </p>
                   </div>
                 </div>

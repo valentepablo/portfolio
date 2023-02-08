@@ -5,6 +5,40 @@ import ProjectCard from "./ProjectCard";
 
 const proyectos = [
   {
+    nombre: "Gamestore v2.0",
+    descripcion:
+      "Tienda virtual de videojuegos. Permite filtrar por categorías, ver el detalle de cada producto y agregar al carrito de compras.",
+    tecnologias: [
+      {
+        nombre: "NextJS",
+        icono:
+          "https://res.cloudinary.com/dg3gyk0gu/image/upload/v1669674284/tags/next.png",
+      },
+      {
+        nombre: "TypeScript",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+      },
+      {
+        nombre: "TailwindCSS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        nombre: "Firebase",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/4/46/Touchicon-180.png",
+      },
+      {
+        nombre: "Framer Motion",
+        icono:
+          "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png",
+      },
+    ],
+    preview: "../../preview-gamestore2.png",
+    url: "https://gamestore-nextjs.vercel.app/",
+  },
+  {
     nombre: "Gamestore",
     descripcion:
       "Tienda virtual de videojuegos. Permite filtrar por categorías, ver el detalle de cada producto y agregar al carrito de compras.",
