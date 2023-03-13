@@ -2,10 +2,12 @@ const ProjectCard = ({ proyecto }) => {
   return (
     <div
       id={proyecto.nombre}
-      className="rounded-2xl bg-[#101010] p-6 md:px-16 md:py-14"
+      className="rounded-2xl border border-[#080808] bg-gradient-to-b from-[#060606] to-[#010101] p-6 md:px-16 md:py-14"
     >
-      <div className="flex items-center justify-between">
-        <h3 className="text-lg font-medium md:text-5xl">{proyecto.nombre}</h3>
+      <div className="flex flex-col justify-between gap-2 pb-4 md:flex-row">
+        <h3 className="mb-1 text-2xl font-medium md:text-5xl">
+          {proyecto.nombre}
+        </h3>
         <div className="flex items-center gap-2">
           <a
             href={proyecto.url}
@@ -54,7 +56,7 @@ const ProjectCard = ({ proyecto }) => {
       <p className="mt-2 max-w-prose text-sm text-zinc-400 md:mt-2 lg:text-base">
         {proyecto.descripcion}
       </p>
-      <div className="mt-2 mb-4 flex gap-3 md:mb-6 md:mt-4">
+      <div className="mt-4 mb-4 flex gap-3 md:mb-6 md:mt-6">
         {proyecto.tecnologias.map((tecnologia) => {
           return (
             <img
@@ -66,7 +68,7 @@ const ProjectCard = ({ proyecto }) => {
           );
         })}
       </div>
-      <div className="rounded-lg bg-neutral-900 md:px-16 md:py-12">
+      <div className="rounded-lg md:px-16 md:py-12">
         <img
           src={proyecto.preview}
           alt="something special"
