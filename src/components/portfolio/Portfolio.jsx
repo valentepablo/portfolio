@@ -7,7 +7,7 @@ const proyectos = [
   {
     nombre: "Language Spin",
     descripcion:
-      "Language Spin es una academia de idiomas situada en Catamarca, Argentina. Fuí parte del equipo de desarrollo de este sitio, el cuál contaba con dos diseñadores UX/UI y dos desarrolladores frontend. Fue una gran experiencia este proyecto, ya que me permitió conocer un poco las dinámicas del trabajo en equipo. Aprendí mucho sobre mis compañeros y también aporté mis conocimientos.",
+      "Language Spin es una academia de idiomas situada en Catamarca, Argentina. Fuí parte del equipo de desarrollo de este sitio, el cuál contaba con dos diseñadores UX/UI y dos desarrolladores frontend. Fue una gran experiencia este proyecto, ya que me permitió conocer un poco las dinámicas del trabajo en equipo. Aprendí mucho de mis compañeros y también aporté mis conocimientos.",
     tecnologias: [
       {
         nombre: "ReactJS",
