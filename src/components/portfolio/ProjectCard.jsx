@@ -2,7 +2,7 @@ const ProjectCard = ({ proyecto }) => {
   return (
     <div
       id={proyecto.nombre}
-      className="rounded-2xl border border-[#080808] bg-gradient-to-b from-[#060606] to-[#010101] p-6 md:px-16 md:py-14"
+      className="rounded-2xl border border-[#101010] bg-gradient-to-b from-[#080808] to-[#030303] p-6 md:px-16 md:py-14"
     >
       <div className="flex flex-col justify-between gap-2 pb-4 md:flex-row">
         <h3 className="mb-1 text-2xl font-medium md:text-5xl">
