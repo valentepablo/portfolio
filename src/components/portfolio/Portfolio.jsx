@@ -5,6 +5,26 @@ import ProjectCard from "./ProjectCard";
 
 const proyectos = [
   {
+    nombre: "Language Spin",
+    descripcion:
+      "Language Spin es una academia de idiomas situada en Catamarca, Argentina. Fuí parte del equipo de desarrollo de este sitio, el cuál contaba con dos diseñadores UX/UI y dos desarrolladores frontend. Fue una gran experiencia este proyecto, ya que me permitió conocer un poco las dinámicas del trabajo en equipo. Aprendí mucho sobre mis compañeros y también aporté mis conocimientos.",
+    tecnologias: [
+      {
+        nombre: "ReactJS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      },
+      {
+        nombre: "TailwindCSS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+    ],
+    preview: "../../preview-languagespin.png",
+    url: "https://language-spin.vercel.app/",
+    github: "https://github.com/Caracolaracol/languageSpin-project",
+  },
+  {
     nombre: "Gamestore v2.0",
     descripcion:
       "Tienda virtual de videojuegos. Permite filtrar por categorías, ver el detalle de cada producto y agregar al carrito de compras.",
@@ -37,35 +57,12 @@ const proyectos = [
     ],
     preview: "../../preview-gamestore2.png",
     url: "https://gamestore-nextjs.vercel.app/",
+    github: "https://github.com/valentepablo/gamestore-nextjs",
   },
   {
-    nombre: "Gamestore",
+    nombre: "Bougie Shop",
     descripcion:
-      "Tienda virtual de videojuegos. Permite filtrar por categorías, ver el detalle de cada producto y agregar al carrito de compras.",
-    tecnologias: [
-      {
-        nombre: "ReactJS",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      },
-      {
-        nombre: "TailwindCSS",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-      },
-      {
-        nombre: "Firebase",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/4/46/Touchicon-180.png",
-      },
-    ],
-    preview: "../../preview-gamestore.png",
-    url: "https://gamestore-valente.netlify.app/",
-  },
-  {
-    nombre: "Poke-App",
-    descripcion:
-      "Pequeña aplicación con la que podemos buscar Pokemons por nombre o por tipo de Pokemon para luego agregarlos a nuestro equipo.",
+      "Tienda virtual para un emprendimiento de velas artesanales. Muestra las diferentes categorías de productos disponibles y contiene un carrito de compras.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -78,32 +75,9 @@ const proyectos = [
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
     ],
-    preview: "../../preview-pokeapp.png",
-    url: "https://pokeapp-valente.netlify.app/",
-  },
-  {
-    nombre: "TodoList",
-    descripcion:
-      "Esta aplicación nos permite crear nuevas tareas y asignarle una prioridad a las mismas. Podemos visualizar las tareas que están en progreso y las que ya han sido completadas.",
-    tecnologias: [
-      {
-        nombre: "ReactJS",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      },
-      {
-        nombre: "TypeScript",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-      },
-      {
-        nombre: "TailwindCSS",
-        icono:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
-      },
-    ],
-    preview: "../../preview-todolist.png",
-    url: "https://todolist-valente.netlify.app/",
+    preview: "../../preview-bougie.png",
+    url: "https://bougieshop.netlify.app/",
+    github: "https://github.com/valentepablo/bougie",
   },
   {
     nombre: "WeatherApp",
@@ -128,11 +102,63 @@ const proyectos = [
     ],
     preview: "../../preview-weatherapp.png",
     url: "https://clima-valente.netlify.app/",
+    github: "https://github.com/valentepablo/weatherapp",
   },
   {
-    nombre: "Bougie Shop",
+    nombre: "TodoList",
     descripcion:
-      "Tienda virtual para un emprendimiento de velas artesanales. Muestra las diferentes categorías de productos disponibles y contiene un carrito de compras.",
+      "Esta aplicación nos permite crear nuevas tareas y asignarle una prioridad a las mismas. Podemos visualizar las tareas que están en progreso y las que ya han sido completadas.",
+    tecnologias: [
+      {
+        nombre: "ReactJS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      },
+      {
+        nombre: "TypeScript",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+      },
+      {
+        nombre: "TailwindCSS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+    ],
+    preview: "../../preview-todolist.png",
+    url: "https://todolist-valente.netlify.app/",
+    github: "https://github.com/valentepablo/ts-todolist",
+  },
+
+  {
+    nombre: "Gamestore",
+    descripcion:
+      "Tienda virtual de videojuegos. Permite filtrar por categorías, ver el detalle de cada producto y agregar al carrito de compras.",
+    tecnologias: [
+      {
+        nombre: "ReactJS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      },
+      {
+        nombre: "TailwindCSS",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+      },
+      {
+        nombre: "Firebase",
+        icono:
+          "https://upload.wikimedia.org/wikipedia/commons/4/46/Touchicon-180.png",
+      },
+    ],
+    preview: "../../preview-gamestore.png",
+    url: "https://gamestore-valente.netlify.app/",
+    github: "https://github.com/valentepablo/gamestore",
+  },
+  {
+    nombre: "Poke-App",
+    descripcion:
+      "Pequeña aplicación con la que podemos buscar Pokemons por nombre o por tipo de Pokemon para luego agregarlos a nuestro equipo.",
     tecnologias: [
       {
         nombre: "ReactJS",
@@ -145,8 +171,9 @@ const proyectos = [
           "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
       },
     ],
-    preview: "../../preview-bougie.png",
-    url: "https://bougieshop.netlify.app/",
+    preview: "../../preview-pokeapp.png",
+    url: "https://pokeapp-valente.netlify.app/",
+    github: "https://github.com/valentepablo/poke-app",
   },
 ];
 
